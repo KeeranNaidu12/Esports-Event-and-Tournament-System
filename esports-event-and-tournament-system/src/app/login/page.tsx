@@ -10,12 +10,14 @@ export default function Login() {
     >
       <NavBar />
       <main>
-        <div className="mt-10 bg-indigo-900 p-5 rounded">
-          <h1 className="text-white font-bold text-2xl mb-5">
-            Are you a member of OKEA?
-            <br />
-            Log into your account to access exclusive features!
-          </h1>
+        <div className="mt-10 bg-indigo-900 p-5 rounded-3xl">
+          <div className="bg-indigo-600 pl-5 pr-5 rounded-t-lg">
+            <h1 className="text-white font-bold text-center text-2xl mb-5">
+              Are you a member of OKEA?
+              <br />
+              Log into your account to access exclusive features!
+            </h1>
+          </div>
           <div className="flex flex-col items-center space-x-5">
             <Image
               className="flex justify-center mb-5 border-2 border-blue-500 w-30 h-30 rounded"
@@ -26,7 +28,7 @@ export default function Login() {
               unoptimized
             />
             <form>
-              <div className="">
+              <div className="bg-indigo-600 p-5 rounded-3xl">
                 <div className="m-1">
                   <label className="text-white font-semibold">Email: </label>
                   <br />
@@ -48,6 +50,10 @@ export default function Login() {
                     required
                   />
                 </div>
+                <button className="flex justify-center bg-indigo-500 pl-5 pr-5 mt-5 rounded-2xl text-white font-bold hover:bg-indigo-300">
+                  {" "}
+                  Log In
+                </button>
               </div>
             </form>
           </div>

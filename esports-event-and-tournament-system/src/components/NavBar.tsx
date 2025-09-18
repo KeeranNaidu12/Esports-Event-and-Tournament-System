@@ -4,7 +4,7 @@ import Link from "next/link";
 function NavBar() {
   return (
     <nav className="fixed top-0 left-0 right-0 bg-blue-900 z-50 p-5">
-      <div className="text-white font-weight space-x-5 text-lg font-medium">
+      <div className="text-white font-semibold space-x-5 text-lg font-medium">
         <div className="position absolute left-10 top-5">
           <img
             src="/OKEA_Esports_Logo_Official.png"
@@ -19,7 +19,7 @@ function NavBar() {
           <Link href="/stuff">Events</Link>
           <Link href="/tournaments">Tournaments</Link>
         </div>
-        <div className="position absolute p-5 right-5 top-5 mt-5 text-2xl">
+        <div className="position absolute p-5 font-semibold right-5 top-5 mt-5 text-2xl">
           <Link href="/login">Login</Link>
         </div>
       </div>
