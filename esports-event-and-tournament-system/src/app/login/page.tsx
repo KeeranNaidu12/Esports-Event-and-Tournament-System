@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "../../components/NavBar";
 import Image from "next/image";
+import { login, signup } from "./actions";
 
 export default function Login() {
   return (
@@ -50,9 +51,17 @@ export default function Login() {
                     required
                   />
                 </div>
-                <button className="flex justify-center bg-indigo-500 pl-5 pr-5 mt-5 rounded-2xl text-white font-bold hover:bg-indigo-300">
-                  {" "}
+                <button
+                  formAction={login}
+                  className="flex justify-center bg-indigo-500 pl-5 pr-5 mt-5 rounded-2xl text-white font-bold hover:bg-indigo-300"
+                >
                   Log In
+                </button>
+                <button
+                  formAction={signup}
+                  className="flex justify-center bg-indigo-500 pl-5 pr-5 mt-5 rounded-2xl text-white font-bold hover:bg-indigo-300"
+                >
+                  Sign Up
                 </button>
               </div>
             </form>
