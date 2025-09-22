@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from "../../components/NavBar";
 import Image from "next/image";
-import { login, signup } from "./actions";
+import { signup } from "./actions";
 
 export default function Login() {
   return (
@@ -31,10 +31,36 @@ export default function Login() {
             <form>
               <div className="bg-indigo-600 p-5 rounded-3xl">
                 <div className="m-1">
-                  <label className="text-white font-semibold">Email: </label>
+                  <label className="text-white font-semibold">
+                    First Name:{" "}
+                  </label>
                   <br />
                   <input
                     className="bg-gray-300 font-semibold rounded-2xl text-blue-600 pl-2"
+                    type="firstName"
+                    name="firstName"
+                    required
+                  />
+                </div>
+                <br />
+                <div className="m-1">
+                  <label className="text-white font-semibold">
+                    Last Name:{" "}
+                  </label>
+                  <br />
+                  <input
+                    className="bg-gray-300 font-semibold text-blue-600 rounded-2xl pl-2"
+                    type="lastName"
+                    name="lastName"
+                    required
+                  />
+                </div>
+                <br />
+                <div className="m-1">
+                  <label className="text-white font-semibold">Email: </label>
+                  <br />
+                  <input
+                    className="bg-gray-300 font-semibold text-blue-600 rounded-2xl pl-2"
                     type="email"
                     name="email"
                     required
@@ -52,10 +78,10 @@ export default function Login() {
                   />
                 </div>
                 <button
-                  formAction={login}
+                  formAction={signup}
                   className="flex justify-center bg-indigo-500 pl-5 pr-5 mt-5 rounded-2xl text-white font-bold hover:bg-indigo-300"
                 >
-                  Log In
+                  Sign Up
                 </button>
               </div>
             </form>
