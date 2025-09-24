@@ -1,6 +1,6 @@
 import React from "react";
-import NavBar from "../../components/NavBar";
-import Exec from "../../components/Exec";
+import NavBar from "../components/NavBar";
+import Exec from "../components/Exec";
 
 export default function About() {
   return (
