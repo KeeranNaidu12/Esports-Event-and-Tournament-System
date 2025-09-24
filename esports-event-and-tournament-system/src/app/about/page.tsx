@@ -26,7 +26,7 @@ export default function About() {
           <Exec name="Pho" role="Event Coordinator" pronouns="They/Them" />
         </div>
         {/* Game Coordinators */}
-        <h2 className="font-bold text-5xl text-center text-white m-10 justify-items-center">
+        <h2 className="font-bold text-5xl text-center text-white mt-50 mb-30 justify-items-center">
           Game Coordinators
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-center">
