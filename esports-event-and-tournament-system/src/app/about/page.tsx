@@ -6,8 +6,8 @@ export default function About() {
   return (
     <div className="bg-indigo-500 min-h-screen">
       <NavBar />
-      <main className="">
-        <div className="flex items-center justify-center min-h-[calc(50vh-4rem)]">
+      <main>
+        <div className="flex items-center justify-center min-h-[calc(50vh-4rem)] bg-indigo-400">
           <h1 className="font-bold text-6xl text-white m-10">
             Meet the visionary leader driving OKEA's mission forward!
           </h1>
